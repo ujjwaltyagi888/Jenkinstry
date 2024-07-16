@@ -3,14 +3,14 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo "building"
-        sleep 10
+        echo "running ${env.BUILD_ID} on ${env.BUILD_URL}"
+        sleep 5
       }
     }
     stage('Test') {
       steps {
         echo "testing"
-        sleep 30
+        sleep 10
       }
     }
     stage('Deploy') {
