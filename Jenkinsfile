@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo "running ${env.BUILD_ID} on ${env.BUILD_URL}"
+        echo "running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         sleep 5
       }
     }
